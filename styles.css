@@ -1,0 +1,215 @@
+/* =====================
+   GLOBAL
+===================== */
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #FFFFFF;
+    color: #000000;
+    line-height: 1.6;
+}
+
+section {
+    padding: 50px 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* =====================
+   HEADER & NAVBAR
+===================== */
+header {
+    background: linear-gradient(45deg, #00D4FF, #A855F7);
+    color: #FFFFFF;
+    padding: 20px;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav h1 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 2em;
+    margin: 0;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #FFFFFF;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #000000;
+}
+
+.menu-toggle {
+    display: none;
+    cursor: pointer;
+    font-size: 1.8em;
+}
+
+/* =====================
+   HERO
+===================== */
+.hero {
+    background: url('ASSET/Desain tanpa judul.png') no-repeat center/cover;
+    text-align: center;
+    color: #FFFFFF;
+    padding: 100px 20px;
+    border-radius: 12px;
+    box-shadow: inset 0 0 10px rgba(0,0,0,0.3);
+}
+
+.hero h2 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 3em;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 1.2em;
+    margin-bottom: 30px;
+}
+
+/* =====================
+   BUTTON (SATU SAJA)
+===================== */
+.cta {
+    background: linear-gradient(45deg, #00D4FF, #A855F7);
+    color: #FFFFFF;
+    padding: 12px 24px;
+    border: none;
+    border-radius: 8px;
+    font-size: 1em;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+.cta:hover {
+    transform: translateY(-2px);
+    opacity: 0.9;
+}
+
+/* =====================
+   PRODUCTS
+===================== */
+.products {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 20px;
+    padding: 20px 0;
+}
+
+.product {
+    background: #FFFFFF;
+    border-radius: 12px;
+    padding: 15px;
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+    transition: transform 0.3s;
+}
+
+.product:hover {
+    transform: translateY(-5px);
+}
+
+.product img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+
+/* =====================
+   GUIDE / ABOUT / CONTACT
+===================== */
+.guide {
+    background: #F0F0F0;
+    text-align: center;
+    border-radius: 12px;
+}
+
+.guide h3 {
+    font-family: 'Montserrat', sans-serif;
+}
+
+.about,
+.contact {
+    text-align: center;
+}
+
+.contact form {
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+.contact input,
+.contact textarea,
+.contact button {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+}
+
+/* =====================
+   FOOTER
+===================== */
+footer {
+    background: #000000;
+    color: #FFFFFF;
+    text-align: center;
+    padding: 20px;
+}
+
+/* =====================
+   RESPONSIVE
+===================== */
+@media (max-width: 768px) {
+    nav ul {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        background: #00D4FF;
+        padding: 20px;
+    }
+
+    nav ul.active {
+        display: flex;
+    }
+
+    .menu-toggle {
+        display: block;
+    }
+
+    .hero h2 {
+        font-size: 2em;
+    }
+}

@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CanvaGen - Template Canva untuk Gen Z</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Poppins&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<!--Header-->
+<header>
+    <nav>
+        <h1>CanvaGen</h1>
+        <ul id="nav-menu">
+            <li><a href="#home">Beranda</a></li>
+            <li><a href="#products">Produk</a></li>
+            <li><a href="#guide">Cara Beli & Download</a></li>
+            <li><a href="#about">Tentang Kami</a></li>
+            <li><a href="#contact">Kontak</a></li>
+        </ul>
+        <div class="menu-toggle" onclick="toggleMenu()">☰</div>
+    </nav>
+</header>
+<!--Banner-->
+<section id="home" class="hero">
+    <h2>Upgrade Kontenmu Jadi Pro Tanpa Ribet!</h2>
+    <p>Template Canva siap pakai buat Gen Z kreatif, pelajar, dan UMKM. Mudah edit, hasil keren!</p>
+    <button class="cta" onclick="scrollToSection('products')">Jelajahi Template</button>
+</section>
+<!--Product-->
+<section id="products">
+    <h3 style="text-align:center;font-family:'Montserrat',sans-serif;">Toko Template</h3>
+
+    <div class="products">
+
+        <div class="product">
+            <img src="ASSET/SHOT RANDOM.png">
+            <h4>Template Instagram Post</h4>
+            <p>Rp30k - Bikin post IG-mu viral kayak pro!</p>
+            <button class="cta"
+            onclick="beliProduk('Template Instagram Post','Rp30.000','ASSET/SHOT RANDOM.png')">
+            Beli Sekarang
+            </button>
+        </div>
+
+        <div class="product">
+            <img src="ASSET/Putih dan Hitam Minimalis Manajer Pemasaran Resume.png">
+            <h4>Template Resume Mahasiswa</h4>
+            <p>Rp25k - Resume keren buat tugas atau kerja.</p>
+            <button class="cta"
+            onclick="beliProduk('Template Resume Mahasiswa','Rp25.000','ASSET/Putih dan Hitam Minimalis Manajer Pemasaran Resume.png')">
+            Beli Sekarang
+            </button>
+        </div>
+
+        <div class="product">
+            <img src="ASSET/Poster Pencegahan Penyakit Menular Ilustratif Merah Muda dan Biru.png">
+            <h4>Poster Donor Darah</h4>
+            <p>Rp30k - Poster keren untuk sukarelawan pendonor darah</p>
+            <button class="cta"
+            onclick="beliProduk('Poster Donor Darah','Rp30.000','ASSET/Poster Pencegahan Penyakit Menular Ilustratif Merah Muda dan Biru.png')">
+            Beli Sekarang
+            </button>
+        </div>
+
+         <div class="product">
+            <img src="ASSET/SHOT RANDOM.png">
+            <h4>Template Instagram Post</h4>
+            <p>Rp30k - Bikin post IG-mu viral kayak pro!</p>
+            <button class="cta"
+            onclick="beliProduk('Template Instagram Post','Rp30.000','ASSET/SHOT RANDOM.png')">
+            Beli Sekarang
+            </button>
+        </div>
+
+        <div class="product">
+            <img src="ASSET/Putih dan Hitam Minimalis Manajer Pemasaran Resume.png">
+            <h4>Template Resume Mahasiswa</h4>
+            <p>Rp25k - Resume keren buat tugas atau kerja.</p>
+            <button class="cta"
+            onclick="beliProduk('Template Resume Mahasiswa','Rp25.000','ASSET/Putih dan Hitam Minimalis Manajer Pemasaran Resume.png')">
+            Beli Sekarang
+            </button>
+        </div>
+
+        <div class="product">
+            <img src="ASSET/Poster Pencegahan Penyakit Menular Ilustratif Merah Muda dan Biru.png">
+            <h4>Poster Donor Darah</h4>
+            <p>Rp30k - Poster keren untuk sukarelawan pendonor darah</p>
+            <button class="cta"
+            onclick="beliProduk('Poster Donor Darah','Rp30.000','ASSET/Poster Pencegahan Penyakit Menular Ilustratif Merah Muda dan Biru.png')">
+            Beli Sekarang
+            </button>
+        </div>
+        <div class="product">
+            <img src="ASSET/Putih dan Hitam Minimalis Manajer Pemasaran Resume.png">
+            <h4>Template Resume Mahasiswa</h4>
+            <p>Rp25k - Resume keren buat tugas atau kerja.</p>
+            <button class="cta"
+            onclick="beliProduk('Template Resume Mahasiswa','Rp25.000','ASSET/Putih dan Hitam Minimalis Manajer Pemasaran Resume.png')">
+            Beli Sekarang
+            </button>
+        </div>
+
+        <div class="product">
+            <img src="ASSET/Poster Pencegahan Penyakit Menular Ilustratif Merah Muda dan Biru.png">
+            <h4>Poster Donor Darah</h4>
+            <p>Rp30k - Poster keren untuk sukarelawan pendonor darah</p>
+            <button class="cta"
+            onclick="beliProduk('Poster Donor Darah','Rp30.000','ASSET/Poster Pencegahan Penyakit Menular Ilustratif Merah Muda dan Biru.png')">
+            Beli Sekarang
+            </button>
+        </div>
+
+        <div class="product">
+            <img src="ASSET/SHOT RANDOM.png">
+            <h4>Template Instagram Post</h4>
+            <p>Rp30k - Bikin post IG-mu viral kayak pro!</p>
+            <button class="cta"
+            onclick="beliProduk('Template Instagram Post','Rp30.000','ASSET/SHOT RANDOM.png')">
+            Beli Sekarang
+            </button>
+        </div>
+
+        <div class="product">
+            <img src="ASSET/Putih dan Hitam Minimalis Manajer Pemasaran Resume.png">
+            <h4>Template Resume Mahasiswa</h4>
+            <p>Rp25k - Resume keren buat tugas atau kerja.</p>
+            <button class="cta"
+            onclick="beliProduk('Template Resume Mahasiswa','Rp25.000','ASSET/Putih dan Hitam Minimalis Manajer Pemasaran Resume.png')">
+            Beli Sekarang
+            </button>
+        </div>
+    </div>
+</section>
+
+<section id="guide" class="guide">
+    <h3>Cara Beli & Download</h3>
+    <p>
+        1. Pilih template favoritmu.<br>
+        2. Bayar via GoPay atau transfer.<br>
+        3. Dapat link download + tutorial!
+    </p>
+    <button class="cta"
+    onclick="window.open('https://wa.me/6287737686627?text=Halo kak 👋 saya mau beli template Canva 😊','_blank')">
+    Mulai Beli
+    </button>
+</section>
+
+<section id="about" class="about">
+    <h3>Tentang CanvaGen</h3>
+    <p>Kami bantu Gen Z, pelajar, dan UMKM berkreasi tanpa ribet.</p>
+</section>
+
+<section id="contact" class="contact">
+    <h3>Kontak Kami</h3>
+    <p>WhatsApp: 087737686627 | IG: @faqeh.ul</p>
+</section>
+
+<footer>
+    <p>&copy; 2026 CanvaGen. All rights reserved.</p>
+</footer>
+
+<!-- 🔥 SCRIPT WA -->
+<script>
+function beliProduk(nama, harga, gambar) {
+    const nomorWA = "6287737686627"; // GANTI NOMOR WA
+
+    const pesan = `Halo kak 👋
+Saya mau beli produk berikut:
+
+📌 ${nama}
+💰 Harga: ${harga}
+🖼️ Preview: ${window.location.origin}/${gambar}
+
+Mohon info cara pembayarannya ya 🙏`;
+
+    const link = "https://wa.me/" + nomorWA + "?text=" + encodeURIComponent(pesan);
+    window.open(link, "_blank");
+}
+
+function scrollToSection(id) {
+    document.getElementById(id).scrollIntoView({ behavior: 'smooth' });
+}
+
+function toggleMenu() {
+    document.getElementById("nav-menu").classList.toggle("active");
+}
+</script>
+
+</body>
+</html>
